@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição no PowerUp</title>
+</head>
+
+<body>
+    <main>
+        <h1>Formulário de Inscrição no PowerUp</h1>
+        <br>
+        <form action="http://www.bytes4future.pt">
+            <h3>
+                <legend>Identificação</legend>
+            </h3>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name"><br>
+            <br>
+            <label for="date">Data de Nascimento:</label>
+            <input type="date" name="date" id="date">
+            <br><br>
+            <h3>
+                <legend>Contactos</legend>
+            </h3>
+            <label for="email">Por favor introduza o seu e-mail:</label><br>
+            <input type="email" name="email" id="email"><br>
+            <br>
+            <label for="telef">Indique o seu número de telefone:</label><br>
+            <input type="tel" name="telef" id="telef">
+            <br><br>
+            <h3>
+                <legend>Power Ups</legend>
+            </h3>
+            <label for="powerup">Selecione o PowerUp onde quer se inscrever:</label><br>
+            <select name="powerup" id="powerup">
+                <option value="powerup1">Power Up #1</option>
+                <option value="powerup2">Power Up #2</option>
+                <option value="powerup3">Power Up #3</option>
+                <option value="powerup4">Power Up #4</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submeter Inscrição">
+            <small>Ao submeter este formulário está a concordar com os <a
+                    href="https://www.bytes4future.pt/termos-e-condicoes-gerais">Termos e Condições</a> e a <a
+                    href="https://bytes4future.pt/politica-de-privacidade">Política de Privacidade</a>.</small>
+        </form>
+    </main>
+</body>
+
+</html>

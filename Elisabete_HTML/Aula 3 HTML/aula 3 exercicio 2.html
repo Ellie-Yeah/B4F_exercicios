@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3 exercicio 2</title>
+</head>
+
+<body>
+    <!--Create a simple HTML form for user registration.
+Form Structure:
+Personal Information:
+Full Name (required)
+Date of Birth (required)
+Gender (Male, Female, Other) - using the <select> element
+Account Information:
+Email Address (required and format validation)
+Password (required and hidden)
+Confirm Password (required and hidden)
+Communication Preferences:
+Accept Receive News by Email (checkbox)-->
+    <main>
+        <h1>Formulário</h1>
+        <form action="">
+            <fieldset>
+                <legend style="font-weight:1000;">Informação Pessoal</legend>
+                <br>
+                <label for="fullname">Nome Completo: (obrigatório)</label>
+                <input type="text" name="fullname" id="fullname" required>
+                <br><br>
+                <label for="dob">Data de Nascimento: (obrigatório</label>
+                <input type="date" name="dob" id="dob" required>
+                <br><br>
+                <label for="genero">Género:</label>
+                <select name="genero" id="genero">
+                    <option value="select" selected disabled>--Selecione o género--</option>
+                    <option value="fem">feminino</option>
+                    <option value="mas">masculino</option>
+                    <option value="other">outro</option>
+                </select>
+            </fieldset>
+            <br>
+            <br>
+            <br>
+            <fieldset>
+                <legend style="font-weight:1000;">Informação de Conta</legend>
+                <br>
+                <label for="email">Endereço de E-Mail (obrigatório)</label>
+                <!--«[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address"» fui buscar
+                aqui:https://stackoverflow.com/questions/5601647/html5-email-address-input-pattern-attribute-->
+                <input type="email" name="email" id="email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                    title="Invalid email address"><br><br>
+                <label for="pw">Password (obrigatório)</label>
+                <input type="password" name="pw" id="pw" required><br><br>
+                <label for="pw">Confirmar Password (obrigatório)</label>
+                <input type="password" name="pw" id="pw" required><br>
+                <!-- oculto? -->
+            </fieldset>
+            <br>
+            <br>
+            <br>
+            <fieldset>
+                <legend style="font-weight:1000;">Preferências de Comunicação:</legend>
+                <br>
+                <label for="prefcom">Aceita receber Novidades por E-mail?</label>
+                <input type="checkbox" name="prefcom" id="prefcom">
+            </fieldset>
+            <br>
+            <input type="reset" value="Limpar" />
+            <input type="submit" value="Enviar" />
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+h3{
+    color:blue;
+    font-size: 50px;
+    background-color: paleturquoise; 
+}
+
+p{ 
+    font-size: 40px0;
+color: palevioletred;
+}
+
+.main-content{
+background-color: rgba(255, 0, 0, 0.23);
+}
+
+.heading{
+    font-size: 30px;
+    color: blueviolet;
+}
+.content{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+#p1{
+    font-size: 75px;
+}
+

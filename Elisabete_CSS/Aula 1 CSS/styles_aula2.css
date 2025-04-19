@@ -1,0 +1,52 @@
+
+/*TODO:
+estilizar os links da nav, remover sublinhado,
+e fazer aparecer sublinhado quando o rato passa por cima
+*/
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:blue;
+    cursor: pointer;
+
+}
+
+li:first-child{
+    background-color: yellow;
+}
+/*-------box models-------*/
+
+
+fieldset{
+    text-align: center;
+    border-color: blue;
+    border-radius: 20px;
+    border-style: double;
+    width:50%;
+    padding:100px;
+}
+
+button{
+    outline:outset;
+    outline-color: rgba(255, 0, 0, 0.541);
+    border: outset;
+    border-color: rgb(253, 159, 43);
+    border-radius:35px;
+    background-color: blue;
+    color: white;
+    margin: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: aquamarine;
+    color: blue;
+    cursor: pointer;
+}
