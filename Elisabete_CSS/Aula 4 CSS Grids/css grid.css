@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-areas:
+        "one two"
+        "three two";
+}
+
+.item {
+    padding: 1rem;
+}
+
+.item:nth-child(1) {
+    background-color: blueviolet;
+    grid-area: one;
+}
+
+.item:nth-child(2) {
+    background-color: blue;
+    grid-area: two;
+}
+
+.item:nth-child(3) {
+    background-color: grey;
+    grid-area: three;
+}
