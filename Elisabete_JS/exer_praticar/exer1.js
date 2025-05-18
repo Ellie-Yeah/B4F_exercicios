@@ -137,29 +137,101 @@ let i = 1;
 while (i <= 10) {
     console.log(i);
     i++;
-}
+};
 //Escrever um ciclo for para imprimir números pares de 2 a 20.
 for (let j = 2; j <= 20; j += 2) {
     console.log(j)
-}
+};
 
 //Escrever um ciclo for para iterar através de um Array e imprimir cada elemento.
 
+let frutas = ["pera", "uva", "tangerina", "ananas"];
+//              0       1         2          3
+
+for (let k = 0; k < frutas.length; k++) {
+    console.log(frutas[k]);
+};
+
 //Escrever um ciclo for para iterar através de um Array e imprimir apenas os números ímpares.
 
-//Escrever um ciclo for para iterar através de um Array e imprimir a soma de todos os elementos.
+let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+for (let y = 0; y < numberArray.length; y++) {
+    if (numberArray[y] % 2 === 1) {
+        console.log(`Odds: ${numberArray[y]}`);
+    } else {
+        console.log(`Evens: ${numberArray[y]}`);
+    }
+}
+
+//Escrever um ciclo for para iterar através de um Array e imprimir a soma de todos os elementos.
+let total = 0;
+for (let y = 0; y < numberArray.length; y++) {
+    total += numberArray[y];
+}
+console.log(`sums' total: ${total}`)
 
 
 //**************** Arrays ****************
 //Declarar um array vazio e adicionar elementos nele.
 
+let vegetables = [];
+console.log("empty", vegetables);
+
+vegetables.push("cabbage");
+vegetables.push("onion", "lettuce");
+vegetables.push("potato", "carrot", "zucchini");
+
+console.log(vegetables);
+
 //Aceder e imprimir um elemento de um array.
+let firstVegetable = vegetables[0];
+console.log(firstVegetable);
 
 //Atualizar o valor de um elemento num array.
+vegetables[5] = "pumpkin";
+console.log(vegetables);
 
 //Remover um elemento de um array.
-
+vegetables.shift();
+console.log(vegetables);
 //Iterar através de um array e imprimir cada elemento.
+let lastIndex = vegetables.length - 1;
+for (let v = 0; v < lastIndex; v++) {
+    console.log(vegetables[v]);
+}
+for (let v = 1; v < lastIndex; v++) {
+    console.log(vegetables[v]);
+}
+for (let v = 2; v < lastIndex; v++) {
+    console.log(vegetables[v]);
+}
+for (let v = 3; v < lastIndex; v++) {
+    console.log(vegetables[v]);
+}
+for (let v = 4; v < lastIndex; v++) {
+    console.log(vegetables[v]);
+}
+for (let v = 5; v < lastIndex; v++) {
+    console.log(vegetables[v]);
+}
+
 
 //Encontrar o valor máximo e mínimo num array.
+let minMaxArr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+function minArray(minMaxArr) {
+
+    return Math.min.apply(null, minMaxArr);
+
+}
+let resultMin = minArray(minMaxArr)
+console.log("Min number:", resultMin);
+
+function maxArray(minMaxArr) {
+
+    return Math.max.apply(null, minMaxArr);
+
+}
+let resultMax = maxArray(minMaxArr)
+console.log("Max number:", resultMax);
